@@ -16,7 +16,7 @@ public class JWTHelper {
     public static final long JWT_TOKEN_VALIDITY =  5 * 60 * 60;
 
     // Secret Key
-    private String secret = "abcdefghijklmnopqrstuvwxyz";
+    private String secret = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 
     // Get username from Token
     public String getUsernameFromToken(String token){

@@ -24,7 +24,6 @@ public class AuthController {
     @Autowired
     private AuthenticationManager manager;
 
-
     @Autowired
     private JWTHelper helper;
 
@@ -51,8 +50,6 @@ public class AuthController {
         UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(email, password);
         try {
             manager.authenticate(authentication);
-
-
         } catch (BadCredentialsException e) {
             throw new BadCredentialsException(" Invalid Username or Password  !!");
         }
